@@ -213,6 +213,7 @@ function arena(firstHero, secondHero) {
 
     if (fistHeroSum > secondHeroSum) {
         winner = firstHero;
+
     } else if (fistHeroSum < secondHeroSum) {
         winner = secondHero;
     }
