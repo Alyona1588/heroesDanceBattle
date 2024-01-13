@@ -4,4 +4,4 @@
 
 Репозиторий - https://github.com/Alyona1588/heroesDanceBattle/
 
-Страница - https://
+Страница - https://alyona1588.github.io/heroesDanceBattle/
