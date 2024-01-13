@@ -18,7 +18,8 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 }
-button{
+
+button {
     cursor: pointer;
     width: 100%;
     border-radius: 12px;
@@ -33,21 +34,25 @@ button{
     background: linear-gradient(-90deg, #FF54FD 0%, #6654FF 100%);
 
 }
-button:disabled{
+
+button:disabled {
     cursor: not-allowed;
     color: #00000080;
     text-shadow: none;
     background: linear-gradient(90deg, #828282 0%, #FFFFFF80 100%);
 }
+
 header {
     background: #FFFFFF80;
     backdrop-filter: blur(4px);
 }
-main{
+
+main {
     flex: 1;
     display: flex;
     align-items: center;
 }
+
 .container {
     max-width: 1440px;
     margin: 0 auto;
@@ -70,18 +75,21 @@ main{
 
 /*   Стили для формы   */
 
-.form-wrapper{
+.form-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.form-wrapper, .battle-zone{
+
+.form-wrapper,
+.battle-zone {
     padding: 16px;
     border-radius: 12px;
 
     background: #FFFFFF80;
     backdrop-filter: blur(4px);
 }
+
 .form {
     max-width: 580px;
     display: flex;
@@ -126,14 +134,14 @@ main{
     opacity: 0;
 }
 
-.radio-input + label {
+.radio-input+label {
     cursor: pointer;
     display: inline-flex;
     align-items: center;
     user-select: none;
 }
 
-.radio-input + label::before {
+.radio-input+label::before {
     content: '';
     display: inline-block;
     width: 1em;
@@ -146,13 +154,14 @@ main{
     background-size: 50% 50%;
 }
 
-.radio-input:checked + label::before {
+.radio-input:checked+label::before {
     border-color: #6654FF;
     background-color: #6654FF;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
 }
 
-.radio-label-text, .radio-label-title {
+.radio-label-text,
+.radio-label-title {
     text-align: center;
     font-size: 24px;
     color: #6654FF;
@@ -229,12 +238,13 @@ main{
     overflow: hidden;
 }
 
-.card-class{
+.card-class {
     font-size: 24px;
     text-align: center;
     font-weight: 300;
 }
-.card-title-text{
+
+.card-title-text {
     font-size: 32px;
     font-weight: 700;
     text-transform: uppercase;
@@ -245,9 +255,11 @@ main{
     font-weight: 400;
     text-align: center;
 }
-.card-parameters-heading{
+
+.card-parameters-heading {
     margin: 8px 0;
 }
+
 .card-parameters {
     display: flex;
     justify-content: space-around;
@@ -269,13 +281,14 @@ main{
     font-weight: 300;
     font-size: 16px;
 }
-.card-button{
+
+.card-button {
     margin-top: 8px;
     padding: 8px;
     font-size: 24px;
 }
 
-.battle-zone-button{
+.battle-zone-button {
     margin-top: 16px;
     padding: 16px;
     font-size: 24px;
@@ -288,7 +301,7 @@ main{
 .form-button:hover:enabled,
 .card-button:hover:enabled,
 .battle-zone-button:hover:enabled {
-	transform: translateY(-3px);
+    transform: translateY(-3px);
 }
 
 
@@ -314,7 +327,8 @@ main{
         margin-top: 4px;
     }
 
-    .form, .cards {
+    .form,
+    .cards {
         gap: 16px;
     }
 
