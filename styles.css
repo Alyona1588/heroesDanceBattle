@@ -284,6 +284,16 @@ main{
     background: linear-gradient(90deg, #00FF19 0%, #6654FF 100%);
 }
 
+
+.form-button:hover:enabled,
+.card-button:hover:enabled,
+.battle-zone-button:hover:enabled {
+	transform: translateY(-3px);
+}
+
+
+
+
 /*   Медиазапросы   */
 
 @media screen and (max-width: 752px) {
