@@ -219,10 +219,10 @@ function arena(firstHero, secondHero) {
 
     if (winner) {
         console.log(`Ритмично чествуем победителя: ${winner.name}`);
-    //    alert(`Ритмично чествуем победителя: ${winner.name}`);
+        alert(`Ритмично чествуем победителя: ${winner.name}`);
     } else {
         console.log("В танцевальном баттле победила дружба!");
-    //    alert("В танцевальном баттле победила дружба!");
+        alert("В танцевальном баттле победила дружба!");
     }
 }
 
