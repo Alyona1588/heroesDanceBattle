@@ -199,9 +199,8 @@ function countStatsSum(hero) {
 
 
 function arena(firstHero, secondHero) {
-    console.log(
-        `Да начнётся танцевальный баттл между ${firstHero.name} и ${secondHero.name}!`
-    );
+    console.log(`Да начнётся танцевальный баттл между ${firstHero.name} и ${secondHero.name}!`);
+    alert(`Да начнётся танцевальный баттл между ${firstHero.name} и ${secondHero.name}!`);
 
     let winner = null;
 
@@ -210,6 +209,8 @@ function arena(firstHero, secondHero) {
 
     console.log("Сумма значений параметров первого героя: ", fistHeroSum);
     console.log("Сумма значений параметров второго героя: ", secondHeroSum);
+
+    alert(`Сумма значений ${firstHero.name}: ${fistHeroSum}, а сумма значений ${secondHero.name}: ${secondHeroSum}!`);
 
     if (fistHeroSum > secondHeroSum) {
         winner = firstHero;
@@ -228,7 +229,22 @@ function arena(firstHero, secondHero) {
 
 startBattleButton.onclick = () => {
     arena(playerHero, enemyHero);
+};
+
+
+
+// ------------------------------Доп.способности--------------------
+doSkillButton.onclick = () => {
+    if (playerHero) {
+        if (playerHero.constructor.name === "Mage") {
+            playerHero.healHero(playerHero);
+        } else if (playerHero.constructor.name === "Knight") {
+            playerHero.gainAgility(playerHero);
+        } else {
+            console.log("Упс! Произошла какая-то ошибка!");
+        }
+    } else {
+        alert("Сначала добавьте игрока!");
+    }
+    displayPlayerHero(playerHero);
 }; 
-
-
-
