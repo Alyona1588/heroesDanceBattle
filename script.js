@@ -97,6 +97,19 @@ sendToBattleButton.onclick = () => {
 
         displayPlayerHero(playerHero);
 
+        function addImg() {
+            const playerHeroClass = document.getElementById("playerHeroClass")
+            if (heroClass === 'Mage') {
+                playerHeroClass.innerHTML = "🔮 МАГ 🔮";
+            }
+            else if (heroClass === 'Knight') {
+                playerHeroClass.innerHTML = "🗡 РЫЦАРЬ 🗡";
+            }
+        }
+
+        //Запуск метода добавления тематических изображений в карточку
+        addImg();
+
         // Снимаем блок с кнопок для дальнейшего взаимодействия 
         getEnemyButton.removeAttribute("disabled");
         doSkillButton.removeAttribute("disabled")
@@ -116,6 +129,8 @@ function displayPlayerHero(hero) {
     document.getElementById("playerHeroStrength").innerHTML = hero.stats.str;
     document.getElementById("playerHeroIntelligence").innerHTML = hero.stats.int;
     document.getElementById("playerHeroAgility").innerHTML = hero.stats.agi;
+
+
 
     hero.displayHero();
 }
@@ -248,4 +263,18 @@ doSkillButton.onclick = () => {
         alert("Сначала добавьте игрока!");
     }
     displayPlayerHero(playerHero);
-}; 
+};
+
+
+
+// Мусор
+
+//Функция добавления в карточку героя пиктограммы героя
+
+//       const dataHeroes = document.querySelector('[data-heroes="my"]');
+
+
+
+// const card = document.querySelector('.card');
+// console.log(card)
+
